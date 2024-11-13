@@ -17,11 +17,11 @@
         <h2> Contacta con nosotros</h2>
 
         <div>
-            <input type="text" name= "nombre" placeholder="Nombre *"> 
+            <input type="text" name= "nombre" id = "nombre" placeholder="Nombre *" required> 
         </div>
         
         <div>
-            <input type="email" name= "email" placeholder="Email *"> 
+            <input type="email" name= "email" id = "email" placeholder="Email *" required> 
 
         </div>
 
@@ -34,7 +34,7 @@
         </div>
 
         <div>
-            <input type="text" name = "comentarios" placeholder="Comentarios *"> 
+            <input type="text" name = "comentarios" id ="comentarios" placeholder="Comentarios *" required> 
         </div>
 
         <div>  
@@ -50,25 +50,43 @@
 
 <script>
 
+
     $('#Enviar').click( function(){
 
         event.preventDefault();
 
-        $.ajax({
-            url: 'recogidaDeDatos.php',
-            type: 'POST',
-            data: $('#form').serialize(),
-        })
-        .done( function(res){
+        let isValid = true;
+        let errorMsg = "Se deben rellenar los campos marcados con asteriscos";
 
-                $('#respuesta').html(res);
+        if($('#nombre').val().trim() == "" || $('#email').val().trim() == "" || $('#comentarios').val().trim() == "" ){
 
-        })
-        .fail(function(){
+            isValid = false;
+        }
 
-            $('#respuesta').html("ha ocurrido un error");
+        if(!isValid){
 
-        });
+            alert(errorMsg);
+
+        }
+        else{
+            $.ajax({
+                url: 'recogidaDeDatos.php',
+                type: 'POST',
+                data: $('#form').serialize(),
+            })
+            .done( function(res){
+
+                    $('#respuesta').html(res);
+
+            })
+            .fail(function(){
+
+                $('#respuesta').html("ha ocurrido un error");
+
+            });
+        }
+
+ 
 
 
 
