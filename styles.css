@@ -4,9 +4,9 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items:baseline;
+    align-items: center; 
     background-color: #ffffff;
-    flex-direction: column;
+
 
 }
 
@@ -15,4 +15,9 @@ h2{
     font-size: large;
     font-weight: bold;
 
+}
+
+form{
+
+    margin-bottom: 30px;
 }

@@ -8,8 +8,7 @@
 
 <body>
   
-
-    <form action="recogidaDeDatos.php">
+    <form method="post">
 
         <h2> Contacta con nosotros</h2>
 
@@ -36,13 +35,11 @@
 
         <div>  
             <input type="checkbox" >
-            <label for="aceptar_terminos">Acepto los términos y condiciones</label>
+            <label for="aceptar_terminos">He leido y acepto la politíca de privacidad</label>
         </div>
         <div>    <input type="submit">  </div>
 
-
-
-
     </form>
+    <?php include("recogidaDeDatos.php"); ?>
 
 </body>
