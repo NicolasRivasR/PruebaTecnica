@@ -45,13 +45,15 @@
 
     </form>
     
-    <div id="respuesta"> </div>
+    <div class="rep" id="respuesta"> </div>
 </body>
 
 <script>
 
     $('#Enviar').click( function(){
-        console.log("Boton pulsado");
+
+        event.preventDefault();
+
         $.ajax({
             url: 'recogidaDeDatos.php',
             type: 'POST',
@@ -59,14 +61,16 @@
         })
         .done( function(res){
 
-                $('respuesta').html(res);
+                $('#respuesta').html(res);
 
         })
-        .fail(function(res){
+        .fail(function(){
 
-            $('respuesta').html(res);
+            $('#respuesta').html("ha ocurrido un error");
 
         });
+
+
 
     })
 

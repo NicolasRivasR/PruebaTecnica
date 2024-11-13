@@ -15,18 +15,19 @@ if($conexion){
     $res = mysqli_query($conexion, $consulta);
     if($res){
 
-        echo "Se ha enviado correctametne la consulta";
+        echo "<p>Se ha enviado correctametne la consulta</p>";
 
     }
     else{
+        
 
-        echo "Ha ocurrido un error al intentar enviar la consulta";
+        echo "<p>Ha ocurrido un error al intentar enviar la consulta</p>";
 
     }
 }
 else{
 
-    echo "No ha sido posible conectarse a la base de datos";
+    echo "<p>No ha sido posible conectarse a la base de datos</p>";
 
 }
 
