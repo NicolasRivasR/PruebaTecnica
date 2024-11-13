@@ -9,3 +9,7 @@ Funcionalidades:
 -Comporbación del CheckBox: OK
 -Aviso al usuario de los errores en el formulario: OK
 
+
+Maquetado:
+-Similar a lo esperado: OK
+-Responsive: 
