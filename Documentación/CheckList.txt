@@ -12,4 +12,5 @@ Funcionalidades:
 
 Maquetado:
 -Similar a lo esperado: OK
--Responsive: 
+-Responsive: OK
+
