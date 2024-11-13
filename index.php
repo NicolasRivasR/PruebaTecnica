@@ -1,44 +1,70 @@
-<?php 
-
-$nombre = $_GET["nombre"];
-$email = $_GET["email"];
-$telefono = $_GET["telefono"];
-$asunto = $_GET["asunto"];
-$comentarios = $_GET["comentarios"];
-
-echo "He recibido los siguietes datos: \n";
-echo $nombre . "\n";
-echo $email . "\n";
-echo $telefono. "\n";
-echo $asunto. "\n";
-echo $comentarios. "\n";
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 
-<link rel="stylesheet" href="styles.css">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+</head>
 
 <body>
+  
+    <form action="" id="form">
 
-   <h2> Contacta con nosotros</h2>
+        <h2> Contacta con nosotros</h2>
 
-    <form action="recogidaDeDatos.php">
+        <div>
+            <input type="text" name= "nombre" placeholder="Nombre *"> 
+        </div>
+        
+        <div>
+            <input type="email" name= "email" placeholder="Email *"> 
 
-        <input type="text" name= "nombre"> 
+        </div>
 
-        <input type="email" name= "email"> 
+        <div>
+            <input type="tel" name = "telefono" placeholder="Teléfono"> 
 
-        <input type="tel" name = "telefono"> 
+        </div>
+        <div>
+            <input type="text" name = "asunto" placeholder="Asunto"> 
+        </div>
 
-        <input type="text" name = "asunto"> 
+        <div>
+            <input type="text" name = "comentarios" placeholder="Comentarios *"> 
+        </div>
 
-        <input type="text" name = "comentarios"> 
-
-        <input type="checkbox" >
-
-        <input type="submit">
+        <div>  
+            <input type="checkbox" >
+            <label for="aceptar_terminos">He leido y acepto la politíca de privacidad</label>
+        </div>
+        <div>    <input type="submit" id="Enviar">  </div>
 
     </form>
-
+    
+    <div id="respuesta"> </div>
 </body>
+
+<script>
+
+    $('#Enviar').click( function(){
+        console.log("Boton pulsado");
+        $.ajax({
+            url: 'recogidaDeDatos.php',
+            type: 'POST',
+            data: $('#form').serialize(),
+        })
+        .done( function(res){
+
+                $('respuesta').html(res);
+
+        })
+        .fail(function(res){
+
+            $('respuesta').html(res);
+
+        });
+
+    })
+
+</script>
