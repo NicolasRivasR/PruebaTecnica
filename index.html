@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<link rel="stylesheet" href="styles.css">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+</head>
 
 <body>
-
-   <h2> Contacta con nosotros</h2>
+  
 
     <form action="recogidaDeDatos.php">
 
-        <input type="text" > 
+        <h2> Contacta con nosotros</h2>
 
-        <input type="text" > 
+        <div>
+            <input type="text" name= "nombre" placeholder="Nombre *"> 
+        </div>
+        
+        <div>
+            <input type="email" name= "email" placeholder="Email *"> 
 
-        <input type="text" > 
+        </div>
 
-        <input type="text" > 
+        <div>
+            <input type="tel" name = "telefono" placeholder="Teléfono"> 
 
-        <input type="text" > 
+        </div>
+        <div>
+            <input type="text" name = "asunto" placeholder="Asunto"> 
+        </div>
 
-        <input type="checkbox" >
+        <div>
+            <input type="text" name = "comentarios" placeholder="Comentarios *"> 
+        </div>
 
-        <input type="submit">
+        <div>  
+            <input type="checkbox" >
+            <label for="aceptar_terminos">Acepto los términos y condiciones</label>
+        </div>
+        <div>    <input type="submit">  </div>
+
+
+
 
     </form>
 

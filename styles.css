@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items:baseline;
     background-color: #ffffff;
+    flex-direction: column;
 
 }
 
