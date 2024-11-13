@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Montserrat';
     margin: 0;
@@ -14,7 +15,7 @@ body {
 
 h1{
     font-weight:900;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
     color: black;
 
 }
@@ -22,14 +23,16 @@ h1{
 .form-group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
     margin-left: -8px;
+    gap: 0.5rem;                
+    margin-bottom: 1rem;
 }
 
 .form-group input {
     font-family: 'Montserrat';
-    width: 270px; /* 48% da espacio para dos inputs */
-    height: 30px;
+    width: 100%;
+    max-width: 270px; 
+    height: 2rem;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
