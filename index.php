@@ -2,9 +2,12 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Revisar lo de la fuente-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>

@@ -9,13 +9,6 @@ if($conexion){
     $asunto = $_POST["asunto"];
     $comentarios = $_POST["comentarios"];
     
-    echo "He recibido los siguietes datos: \n";
-    echo $nombre . "\n";
-    echo $email . "\n";
-    echo $telefono. "\n";
-    echo $asunto. "\n";
-    echo $comentarios. "\n";
-
     $consulta = "INSERT INTO datos( nombre, email, telefono, asunto, comentarios) 
                  VALUES ('$nombre','$email','$telefono','$asunto','$comentarios')";
 
