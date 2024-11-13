@@ -38,7 +38,7 @@
         </div>
 
         <div>  
-            <input type="checkbox" >
+            <input type="checkbox" id="aceptar_terminos" >
             <label for="aceptar_terminos">He leido y acepto la politíca de privacidad</label>
         </div>
         <div>    <input type="submit" id="Enviar">  </div>
@@ -56,11 +56,18 @@
         event.preventDefault();
 
         let isValid = true;
-        let errorMsg = "Se deben rellenar los campos marcados con asteriscos";
+        let errorMsg = "";
 
         if($('#nombre').val().trim() == "" || $('#email').val().trim() == "" || $('#comentarios').val().trim() == "" ){
 
             isValid = false;
+            errorMsg += "Se deben rellenar los campos marcados con asteriscos \n";
+        }
+
+        if(!$('#aceptar_terminos').is(':checked')) {
+
+            isValid = false;
+            errorMsg += "Debes de aceptar la política de privacidad"
         }
 
         if(!isValid){
