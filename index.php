@@ -29,11 +29,11 @@
             <input type="text" name = "asunto" placeholder="Asunto"> 
         </div>
 
-        <div>
-            <input name="comentarios" id ="comentarios" placeholder="Comentarios *" required class= "comentarios"> 
+        <div >
+            <textarea name="comentarios" id ="comentarios" placeholder="Comentarios *" class= "comentarios" required > </textarea>
         </div>
 
-        <div>  
+        <div class = "check">  
             <input type="checkbox" id="aceptar_terminos" >
             <label for="aceptar_terminos">He leído y acepto la politíca de privacidad</label>
         </div>
