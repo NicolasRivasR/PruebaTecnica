@@ -16,7 +16,7 @@
    
     <form action="" id="form">
 
-        <h1 class= "header"> Contacta con nosotros</h1>
+        <h2 class= "header"> Contacta con nosotros</h2>
 
         <div class="form-group">
             <input type="text" name= "nombre" id = "nombre" placeholder="Nombre *" required> 
