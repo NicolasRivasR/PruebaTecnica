@@ -51,6 +51,10 @@ h2{
     border-style: hidden;
     box-sizing: border-box;
     resize: none;
+    visibility: visible;
+    
+    color: rgb(116, 115, 115);
+    font-size: 12px;
 
 
 }
