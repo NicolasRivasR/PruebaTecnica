@@ -4,17 +4,19 @@
 <head>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Revisar lo de la fuente-->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <title>Formulario de contacto</title>
 </head>
 
 <body>
   
     <form action="" id="form">
 
-        <h2> Contacta con nosotros</h2>
+        <h1 class= "header"> Contacta con nosotros</h1>
 
         <div class="form-group">
             <input type="text" name= "nombre" id = "nombre" placeholder="Nombre *" required> 
@@ -30,12 +32,12 @@
         </div>
 
         <div >
-            <textarea name="comentarios" id ="comentarios" placeholder="Comentarios *" class= "comentarios" required > </textarea>
+            <textarea name="comentarios" id ="comentarios"  class= "comentarios" required placeholder="Comentarios *"></textarea>
         </div>
 
         <div class = "check">  
             <input type="checkbox" id="aceptar_terminos" >
-            <label for="aceptar_terminos">He leído y acepto la politíca de privacidad</label>
+            <label for="aceptar_terminos">He leído y acepto la <span>politíca de privacidad</span></label>
         </div>
         <div>    <input type="submit" id="Enviar" class="button">  </div>
 

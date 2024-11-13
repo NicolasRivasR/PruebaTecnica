@@ -12,10 +12,10 @@ body {
 
 }
 
-h2{
-    font-size: 25px;
+h1{
     font-weight:900;
     margin-bottom: 25px;
+    color: black;
 
 }
 
@@ -41,12 +41,13 @@ h2{
 }
 
 .comentarios{
-   
+    font-family: 'Montserrat';
     background-color: whitesmoke;
     margin-bottom: 10px;
     border-radius: 8px;
     width: 98%;
     height: 132px;
+    padding: 10px;
     text-align:start;
     border-style: hidden;
     box-sizing: border-box;
@@ -63,8 +64,25 @@ h2{
 
     color: rgb(116, 115, 115);
     font-size: small;
+    display: flex;             
+    align-items: center;
 }
 
+.check input[type="checkbox"] {
+    margin: 0;                
+}
+
+.check label {
+    margin-left: 5px;           
+}
+
+.check label span{
+
+  color: #0A8EB3;
+
+  font-weight: bold;
+
+}
 
 
 .button{
@@ -72,7 +90,7 @@ h2{
     margin-top: 6px;
     padding: 10px 15px 10px 15px;
     font-weight: bold;
-    background-color: #196fa5;
+    background-color: #0A8EB3;
     color: white;
     border-radius: 10px;
     border-style: hidden;
