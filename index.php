@@ -16,32 +16,28 @@
 
         <h2> Contacta con nosotros</h2>
 
-        <div>
+        <div class="form-group">
             <input type="text" name= "nombre" id = "nombre" placeholder="Nombre *" required> 
-        </div>
-        
-        <div>
+
             <input type="email" name= "email" id = "email" placeholder="Email *" required> 
 
         </div>
 
-        <div>
+        <div class="form-group">
             <input type="tel" name = "telefono" placeholder="Teléfono"> 
 
-        </div>
-        <div>
             <input type="text" name = "asunto" placeholder="Asunto"> 
         </div>
 
         <div>
-            <input type="text" name = "comentarios" id ="comentarios" placeholder="Comentarios *" required> 
+            <input name="comentarios" id ="comentarios" placeholder="Comentarios *" required class= "comentarios"> 
         </div>
 
         <div>  
             <input type="checkbox" id="aceptar_terminos" >
-            <label for="aceptar_terminos">He leido y acepto la politíca de privacidad</label>
+            <label for="aceptar_terminos">He leído y acepto la politíca de privacidad</label>
         </div>
-        <div>    <input type="submit" id="Enviar">  </div>
+        <div>    <input type="submit" id="Enviar" class="button">  </div>
 
     </form>
     

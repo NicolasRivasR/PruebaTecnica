@@ -1,8 +1,8 @@
 
 Funcionalidades:
 
--recoger el	envío de datos del usuario: OK
--insertar los datos en la base de datos: OK
+-Recoger el	envío de datos del usuario: OK
+-Insertar los datos en la base de datos: OK
 -AJAX para enviar los datos: OK
 -Mensaje para avisar que se ha enviado el formulario: OK
 -Comprobación de los campos obligatorios: OK
