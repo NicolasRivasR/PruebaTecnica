@@ -1,6 +1,12 @@
+*{
+
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
 
 body {
-    font-family: 'Montserrat';
+    
     margin: 0;
     margin-top: 0;
     padding: 0;
@@ -14,28 +20,26 @@ body {
 }
 
 h2{
+    font-size: 25px;
     font-weight:900;
-    margin-bottom: 1.5rem;
-    color: black;
+    margin-bottom: 25px;
 
 }
 
 .form-group {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    margin-bottom: 10px;
     margin-left: -8px;
-    gap: 0.25rem;                
-    margin-bottom: 1rem;
 }
 
 .form-group input {
-    font-family: 'Montserrat';
+    
     width: 270px; 
     height: 30px;
     padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 2px 10px;
     border-style: none;
     background-color: whitesmoke;
@@ -44,15 +48,15 @@ h2{
 }
 
 .comentarios{
-    font-family: 'Montserrat';
+   
     background-color: whitesmoke;
     margin-bottom: 10px;
     border-radius: 8px;
+    padding: 10px;
     width: 98%;
     height: 132px;
-    padding: 10px;
     text-align:start;
-    border-style: none;
+    border-style: hidden;
     box-sizing: border-box;
     resize: none;
     visibility: visible;
@@ -87,7 +91,6 @@ h2{
 
 }
 
-
 .button{
 
     margin-top: 6px;
@@ -99,3 +102,9 @@ h2{
     border-style: hidden;
 }
 
+@media screen and (max-width: 600px) {
+    .form-group input{
+      width: 100%;
+      margin-top: 0;
+    }
+  }
