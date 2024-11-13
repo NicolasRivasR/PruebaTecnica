@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    background-color: #ffffff;
+
+}
+
+h2{
+
+    font-size: large;
+    font-weight: bold;
+
+}
